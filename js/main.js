@@ -6,7 +6,6 @@ let app = new Vue({
         title: "Activities List",
         activities: [],
         newActivity: "",
-        name:"",
     },
     methods: {
         addActivity(){
@@ -20,7 +19,6 @@ let app = new Vue({
             this.saveActivities();
         },
         finishActivity(activity){
-            console.log(activity.status)
             activity.status = !activity.status;
             this.saveActivities();
         },
@@ -41,7 +39,6 @@ let app = new Vue({
                 localStorage.removeItem('activities');
             }
         }
-        console.log(this.activities);
     },
 
 });
