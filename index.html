@@ -17,11 +17,16 @@
 
             <ul>
                 <li v-for="activity in activities">
-                    {{ activity.text }}
-                    <input v-if="!activity.status" type="checkbox" @click="finishActivity(activity)">
-                    <input v-else type="checkbox" @click="finishActivity(activity)" checked>
-                    <button @click="deleteActivity(activity)">X</button>
-                </li>
+                    <div>
+                        {{ activity.text }}
+                    </div>
+
+                    <div id="btns">
+                        <input v-if="!activity.status" type="checkbox" @click="finishActivity(activity)">
+                        <input v-else type="checkbox" @click="finishActivity(activity)" checked>
+                        <button @click="deleteActivity(activity)">X</button>
+                    </div>
+                </li> 
             </ul>
 
         </div>

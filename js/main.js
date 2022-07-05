@@ -11,7 +11,7 @@ let app = new Vue({
     methods: {
         addActivity(){
             
-            if(this.newActivity == null){
+            if(this.newActivity == null || this.newActivity == ""){
                 return;
             }
             

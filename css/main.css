@@ -1,13 +1,39 @@
-h1.welcome {
-    text-align: center;
+#vueApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
 
+#vueApp h1, #vueApp ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-input.welcome {
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    display: block;
-    padding: 10px;
-    font-size: 24px;
-    text-align: center;
+
+#vueApp form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#vueApp ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#vueApp li {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    padding: 0 35%;
+}
+
+#vueApp li div {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
