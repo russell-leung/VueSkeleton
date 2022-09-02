@@ -1,5 +1,3 @@
-let id = 0;
-
 let app = new Vue({
     el: "#vueApp",
     data: {
@@ -14,7 +12,7 @@ let app = new Vue({
                 return;
             }
             
-            this.activities.push({id: id++, text: this.newActivity, status: false});
+            this.activities.push({text: this.newActivity, status: false});
             this.newActivity = "";
             this.saveActivities();
         },
